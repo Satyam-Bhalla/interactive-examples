@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/codemirror.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js" class="language-js" data-line="2" data-char="25">// create an array
+var arr1 = ['a', 'b', 'c'];
+// create an iterator by calling entries on the array
+var iterator = arr1.entries();
+
+// log the results, which prints the next Array index, value on each call
+logger.log(
+    'First entry: ' + iterator.next().value + ' :: ' +
+    'Second entry: ' + iterator.next().value + ' :: ' +
+    'Third entry: ' + iterator.next().value);
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="hidden">
+          <div id="editor">
+            <input id="reset" type="button" value="Reset" />
+          </div>
+
+          <div class="output-container">
+              <button id="execute" class="run" type="button">Run</button>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    <script src="../../js/codemirror.js"></script>
+    
+    <script src="../../js/editor-js.js"></script>
+  </body>
+</html>

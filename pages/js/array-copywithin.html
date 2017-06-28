@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/codemirror.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js" class="language-js" data-line="5" data-char="16">// create your array
+var arr1 = ['alpha', 'bravo', 'charlie', 'delta', 'echo', 'foxtrot', 'golf'];
+
+/* call copyWithin passing the target, starting,
+and ending points */
+var result = arr1.copyWithin(2, 4, 6);
+
+// log the result
+logger.log(result);
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="hidden">
+          <div id="editor">
+            <input id="reset" type="button" value="Reset" />
+          </div>
+
+          <div class="output-container">
+              <button id="execute" class="run" type="button">Run</button>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    <script src="../../js/codemirror.js"></script>
+    
+    <script src="../../js/editor-js.js"></script>
+  </body>
+</html>

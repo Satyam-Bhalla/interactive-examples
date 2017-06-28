@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/codemirror.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js" class="language-js" data-line="4" data-char="50">// create an array
+var numbers = [5, 12, 8, 130, 44];
+
+// call find(), passing a function
+var found = numbers.find(function(e) {
+    return e > 10;
+});
+
+// log the result
+logger.log(found);
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="hidden">
+          <div id="editor">
+            <input id="reset" type="button" value="Reset" />
+          </div>
+
+          <div class="output-container">
+              <button id="execute" class="run" type="button">Run</button>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    <script src="../../js/codemirror.js"></script>
+    
+    <script src="../../js/editor-js.js"></script>
+  </body>
+</html>

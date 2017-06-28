@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/codemirror.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js" class="language-js" data-line="4" data-char="33">// create an array
+var animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+
+// call lastIndexOf(), passing the searchElement
+var result = animals.lastIndexOf('Dodo');
+
+// log the result
+logger.log(result);
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="hidden">
+          <div id="editor">
+            <input id="reset" type="button" value="Reset" />
+          </div>
+
+          <div class="output-container">
+              <button id="execute" class="run" type="button">Run</button>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    <script src="../../js/codemirror.js"></script>
+    
+    <script src="../../js/editor-js.js"></script>
+  </body>
+</html>

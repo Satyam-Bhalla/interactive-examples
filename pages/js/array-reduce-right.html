@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="../../css/codemirror.css" rel="stylesheet" />
+    <link href="../../css/editor-js.css" rel="stylesheet" />
+    
+  </head>
+  <body>
+      <section id="static">
+          <pre>
+<code id="static-js" class="language-js" data-line="2" data-char="44">/* Calls reduceRight() on a multi dimensional array, passing a callback function that converts it into a flattened array. */
+var flattenedArray = [[0, 1], [2, 3], [4, 5]].reduceRight(
+    function(previousValue, currentValue) {
+        return previousValue.concat(currentValue);
+    }
+);
+
+// log the result
+logger.log(flattenedArray);
+</code>
+</pre>
+
+      </section>
+
+      <section id="live" class="hidden">
+          <div id="editor">
+            <input id="reset" type="button" value="Reset" />
+          </div>
+
+          <div class="output-container">
+              <button id="execute" class="run" type="button">Run</button>
+              <div id="output" class="output"><code></code></div>
+          </div>
+      </section>
+
+    <script src="../../js/codemirror.js"></script>
+    
+    <script src="../../js/editor-js.js"></script>
+  </body>
+</html>
